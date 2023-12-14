@@ -1,0 +1,388 @@
+@font-face {
+    font-family:TBC;
+    src:url(../TBCContracticaCAPS-Bold.ttf);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:TBC;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+#container
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #161616;
+}
+/* ლოგო */
+#container #logo
+{
+    position: absolute;
+    left: 8%;
+    top: 28px;
+    font-size: 30px;
+    z-index: 997;
+    font-weight: bold;
+    color: #098ae0;
+    left:50px;
+    text-decoration: none;
+}
+/* მენიუ */
+#navbar
+{
+    max-width:100%;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222222;
+    display: grid;
+    place-items: center;
+}
+#navbar ul
+{
+    max-width:100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    max-width:100%;
+    font-size: 15px;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    max-width:100%;
+    text-decoration: none;
+    color: #e4dcdc; 
+}
+/* login button */
+#navbar ul #login
+{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    display: grid;
+    place-items: center;
+    background: #098ae0;
+    border-radius: 10px 20px;
+    right:12px;
+    transition: .2s;
+}
+#navbar ul #login:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.navbar ul #login a
+{
+    color: #161685;
+}
+
+/* content */
+#content
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 996;
+}
+#content h2
+{
+    font-size: 160px;
+    color: white;
+    margin:10px;
+    margin: 0 20px;
+    text-align: center;
+    transition:0.5s;
+    margin-left:130px;
+
+}
+#content h1{
+    font-size:50px;
+    color:#098ae0;
+    margin:2px;
+    margin: 0 10px;
+    transition:0.5s;   
+    margin-left:10px;
+
+}
+#content:hover h2
+{
+    color: #098ae0;
+    transition: 0.5s;
+}
+#content:hover h1{
+    color:white;
+    transition: 0.5s;
+}
+#content h4
+{
+    font-size: 70px;
+    color: #000;
+}
+#content:hover h4
+{
+    color: #098ae0;
+    transition: 0.5s;
+}
+
+/* lines */
+#line1,#line2
+{
+    height: 150px;
+    width: 60px;
+    background: #098ae0;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: skewX(-45deg);
+    transition: .4s;
+    max-width:30%;
+    max-height: 100px;
+
+}
+#line2
+{
+    height: 30px;
+    left: 26%;
+}
+  span{
+    color:rgb(255, 255, 255)
+  }
+
+
+
+  @media only screen and (max-width:1393px) {
+    #container #logo
+{
+    position: absolute;
+    top: 34px;
+    font-size: 20px;
+    z-index: 997;
+    font-weight: bold;
+    color: #098ae0;
+    left:20px;
+    text-decoration: none;
+}
+#navbar ul li
+{
+    max-width:100%;
+    font-size: 15px;
+    margin: 0 25px;
+}
+#navbar ul #login
+{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 25px;
+    display: grid;
+    place-items: center;
+    background: #098ae0;
+    border-radius: 10px 20px;
+    right:10px;
+    transition: .2s;
+}
+#content h2
+{
+    font-size: 100px;
+    color: white;
+    margin:10px;
+    margin: 0 20px;
+    text-align: center;
+    transition:0.5s;
+    margin-left:130px;
+
+
+}
+#content h1{
+    font-size:60px;
+    color:#098ae0;
+    margin:2px;
+    margin: 0 10px;
+    transition:0.5s;   
+    margin-left:10px;
+
+}
+/* lines */
+#line1,#line2
+{
+    height: 150px;
+    width: 60px;
+    background: #098ae0;
+    position: absolute;
+    bottom: 0;
+    left: 24%;
+    transform: skewX(-45deg);
+    transition: .4s;
+    max-width:30%;
+}
+#line2
+{
+    height: 60px;
+    left: 30%;
+}
+  }
+
+  @media only screen and (max-width: 768px){
+    #container #logo
+    {
+        position: absolute;
+        top: 37px;
+        font-size: 17px;
+        z-index: 997;
+        font-weight: bold;
+        color: #098ae0;
+        left:20px;
+        text-decoration: none;
+    }
+    #navbar ul li
+    {
+        max-width:100%;
+        font-size: 12px;
+        margin: 0 25px;
+        margin-left:1px;
+    }
+    #navbar ul #login
+    {
+        height: 30px;
+        width: 60px;
+        position: absolute;
+        top: 29px;
+        display: grid;
+        place-items: center;
+        background: #098ae0;
+        border-radius: 10px 20px;
+        right:10px;
+        transition: .2s;
+    }
+    #content h2
+    {
+        font-size: 50px;
+        color: white;
+        margin:10px;
+        margin: 0 20px;
+        text-align: center;
+        transition:0.5s;
+        margin-left:130px;
+    
+    
+    }
+    #content h1{
+        font-size:20px;
+        color:#098ae0;
+        margin:2px;
+        margin: 0 10px;
+        transition:0.5s;   
+        margin-left:10px;
+    
+    }
+    /* lines */
+    #line1,#line2
+    {
+        height: 40px;
+        width: 40px;
+        background: #098ae0;
+        position: absolute;
+        bottom: 0;
+        left: 24%;
+        transform: skewX(-45deg);
+        transition: .4s;
+        max-width:50%;
+        max-height: 100px;
+    
+    }
+    #line2
+    {
+        height: 20px;
+        left: 30%;
+    }
+  }
+  
+
+  @media only screen and (max-width: 414px){
+    #container #logo
+    {
+        position: absolute;
+        top: 40px;
+        font-size: 9px;
+        z-index: 997;
+        font-weight: bold;
+        color: #098ae0;
+        left:20px;
+        text-decoration: none;
+    }
+    #navbar ul li
+    {
+        max-width:100%;
+        font-size:9px;
+        margin: 0 5px;
+        margin-left:2px;
+    }
+    #navbar ul #login
+    {
+        height: 20px;
+        width: 40px;
+        position: absolute;
+        top: 35px;
+        display: grid;
+        place-items: center;
+        background: #098ae0;
+        border-radius: 10px 20px;
+        right:1px;
+        transition: .2s;
+    }
+    #content h2
+    {
+        font-size: 40px;
+        color: white;
+        margin:10px;
+        margin: 0 2px;
+        text-align: center;
+        transition:0.5s;
+        margin-left:130px;
+    
+    
+    }
+    #content h1{
+        font-size:20px;
+        color:#098ae0;
+        margin:2px;
+        margin: 0 10px;
+        transition:0.5s;   
+        margin-left:10px;
+    
+    }
+    /* lines */
+    #line1,#line2
+    {
+        height: 40px;
+        width: 40px;
+        background: #098ae0;
+        position: absolute;
+        bottom: 0;
+        left: 24%;
+        transform: skewX(-45deg);
+        transition: .4s;
+        max-width:40%;
+        max-height: 100px;
+    
+    }
+    #line2
+    {
+        height: 20px;
+        left: 30%;
+    }
+  }
+  
+
